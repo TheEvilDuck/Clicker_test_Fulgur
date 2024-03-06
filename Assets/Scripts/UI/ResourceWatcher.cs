@@ -1,6 +1,11 @@
 using TMPro;
 using UnityEngine;
 
+
+/// <summary>
+/// Этот класс лишь предоставляет интерфейс взаимодействия с текстовыми полями ресурсов. В теории может быть абстрагирован для того, чтобы 
+/// ресурсы могли не только в виде текста отображаться. 
+/// </summary>
 [RequireComponent(typeof(TextMeshProUGUI))]
 public class ResourceWatcher : MonoBehaviour
 {
@@ -12,7 +17,7 @@ public class ResourceWatcher : MonoBehaviour
         _resourceName = resourceName;
     }
 
-    public virtual void UpdateCount(int count)
+    public void UpdateCount(int count)
     {
         _targetText.text = $"{_resourceName}: {count}";
     }

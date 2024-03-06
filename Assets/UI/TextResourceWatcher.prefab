@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7754492480698153619}
   - component: {fileID: 2875491818205112188}
   m_Layer: 5
-  m_Name: SilverCount
+  m_Name: TextResourceWatcher
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
