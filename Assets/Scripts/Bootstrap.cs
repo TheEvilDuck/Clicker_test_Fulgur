@@ -8,10 +8,10 @@ public class Bootstrap : MonoBehaviour
     [SerializeField] private ResourcesConfig _resourcesConfig;
     [SerializeField] private ResourceButtons _resourceButtons;
     [SerializeField] private ResourceWatchers _resourceWatchers;
-    private PlayerStats _playerStats;
+    private PlayerResourceStorage _playerStats;
     private void Awake() 
     {
-        _playerStats = new PlayerStats();
+        _playerStats = new PlayerResourceStorage();
 
         foreach (ResourcesConfigElement resourceConfig in _resourcesConfig.Resources)
         {

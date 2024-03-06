@@ -12,7 +12,7 @@ public class ResourceButtons: MonoBehaviour
 {
     [SerializeField] private List<ButtonConfig> _configs;
 
-    public void Init(PlayerStats playerStats)
+    public void Init(IPlayerResourceStorage playerStats)
     {
         foreach (ButtonConfig config in _configs)
         {

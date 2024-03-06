@@ -15,9 +15,9 @@ public class ResourceWatchers: MonoBehaviour
     [SerializeField] private ResourceWatcher _totalText;
 
     private ResourcesConfig _resourcesConfig;
-    private PlayerStats _playerStats;
+    private IPlayerResourceStorage _playerStats;
 
-    public void Init(ResourcesConfig resourcesConfig, PlayerStats playerStats)
+    public void Init(ResourcesConfig resourcesConfig, IPlayerResourceStorage playerStats)
     {
         _resourcesConfig = resourcesConfig;
         _playerStats = playerStats;

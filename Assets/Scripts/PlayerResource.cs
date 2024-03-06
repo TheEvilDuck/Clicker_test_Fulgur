@@ -6,12 +6,15 @@ using System;
 public class PlayerResource
 {
     public int Value {get; private set;}
+
     public event Action<int> changed;
 
     public PlayerResource(int defaultValue)
     {
         Value = defaultValue;
     }
+
+    
 
     public void Add(int amount)
     {

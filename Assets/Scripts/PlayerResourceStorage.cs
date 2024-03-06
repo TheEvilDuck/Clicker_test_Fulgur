@@ -1,10 +1,9 @@
 using System.Collections.Generic;
 
 /// <summary>
-/// Класс-хранилище ресурсов игрока. При расширении мог бы быть переименован в ResourceStorage и композицией спрятан в класс игрока. 
-/// Отвечает за хранение ресурсов и взаимодействие с ними
+/// Отвечает за хранение ресурсов и взаимодействие с ними, в последствии может быть интегрирован в какой-нибудь класс игрока.
 /// </summary>
-public class PlayerStats
+public class PlayerResourceStorage: IPlayerResourceStorage
 {
     private Dictionary<ResourceType, PlayerResource> _resources;
     //При большом количестве ресурсов, возможно, есть смысл сумму хранить просто числом, а изменять в методе AddResource
@@ -20,7 +19,7 @@ public class PlayerStats
             return total;
         }
     }
-    public PlayerStats()
+    public PlayerResourceStorage()
     {
         _resources = new Dictionary<ResourceType, PlayerResource>();
     }
